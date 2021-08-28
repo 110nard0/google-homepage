@@ -1,0 +1,108 @@
+/* Import CSS rules for rendering Material Icons */
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    padding: 0;
+    margin: 0;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* Force uniform property values for all browser types */
+* {
+    padding: 0;
+    margin: 0;   
+}
+
+/* body {
+    padding: 10px;
+    border: 1px solid red;
+} */
+
+form {
+    padding: 10px;
+    border: 1px solid red;
+    width: auto;
+    height: 100%;
+    /* width: 0 auto; */
+}
+
+/* Using float:right reverses the order of li content so 
+    display set to inline and text-align set to right 
+    This shifts li content to the right side of screen*/
+nav ul.top-nav {
+    padding: 0;
+    margin: 0; 
+    list-style-type: none;
+    overflow: hidden;
+    text-align: right;
+}
+
+.top-nav li {
+    display: inline;
+}
+
+.top-nav li a {
+    padding: 5px 5px;
+    font-size: 1em;
+}
+
+#sign-in {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin: 5px;
+    
+    background-color: royalblue;
+    color: white;
+    text-align: center;
+}
+
+#sign-in:hover {
+    box-shadow: 2px;
+}
+
+main{
+    padding: 100px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#location {
+    padding: 20px;
+    text-align: left;
+}
+
+nav ul.bottom-nav {
+    padding: 0;
+    margin: 0; 
+    list-style-type: none;
+    overflow: hidden;
+}
