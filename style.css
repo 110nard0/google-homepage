@@ -34,11 +34,14 @@
     margin: 0;   
 }
 
+body {
+    height: 100vh;
+}
+
 form {
     padding: 10px;
     border: 1px solid red;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 
 /* Using float:right reverses the order of li content so 
@@ -53,11 +56,11 @@ nav ul.top-nav {
 }
 
 .top-nav li {
-    display: inline;
+    display: inline-block;
 }
 
-.top-nav li a {
-    padding: 5px 5px;
+.top-nav li a { 
+    margin: 0 5px 0 5px;
     font-size: 1em;
     margin-right: 5px;
 }
@@ -85,6 +88,7 @@ nav ul.top-nav {
 main{
     padding: 100px;
     margin: 0 auto;
+    display: block;
     justify-content: center;
     text-align: center;
 }
@@ -137,13 +141,38 @@ p a {
 }
 
 #location {
-    
+    padding: 10px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 nav ul.bottom-nav {
     padding: 0;
-    margin: 0; 
+    margin: 0;
     list-style-type: none;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bottom-nav li {
+    
+}
+
+.bottom-nav a {
+    padding: 10px;
+}
+
+#link-one {
+    flex-grow: 12;
+}
+
+#link-two, #link-three, #link-four, #link-five {
+    flex: 2;
+}
+
+#link-six, #link-seven, #link-eight {
+    flex: 2;
 }
