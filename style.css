@@ -31,22 +31,27 @@
 /* Force uniform property values for all browser types */
 * {
     padding: 0;
-    margin: 0;   
+    margin: 0;
 }
 
 body {
-    height: 100vh;
+    height: auto;
+    width: auto;
+    box-sizing: border-box;
+    border: 1px solid red;
+    margin: 0 auto;
 }
 
-form {
-    padding: 10px;
-    border: 1px solid red;
-    margin: 0 auto; 
-}
+/* navbar styles*/
 
 /* Using float:right reverses the order of li content so 
     display set to inline and text-align set to right 
     This shifts li content to the right side of screen*/
+
+header nav {
+    margin: 5px;
+}
+
 nav ul.top-nav {
     padding: 0;
     margin: 0; 
@@ -85,9 +90,11 @@ nav ul.top-nav {
     box-shadow: 2px;
 }
 
+/* searchbar styles*/
+
 main{
-    padding: 100px;
-    margin: 0 auto;
+    padding: 10px;
+    margin: 50px auto 200px;
     display: block;
     justify-content: center;
     text-align: center;
@@ -102,7 +109,7 @@ a:hover {
 }
 
 #logo {
-   
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -121,7 +128,6 @@ a:hover {
 #search-item {
     width: 20%;
     margin: 0 auto 30px;
-    
 
     display: grid;
     justify-content: center;
@@ -140,10 +146,24 @@ p a {
     margin-right: 5px;
 }
 
+/* footer styles*/
+
+footer {
+    background-color: rgb(235, 235, 235);
+}
+
 #location {
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 20px;
     text-align: left;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul.bottom-nav {
@@ -151,28 +171,26 @@ nav ul.bottom-nav {
     margin: 0;
     list-style-type: none;
     overflow: hidden;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .bottom-nav li {
-    
+    display: inline-block;
 }
 
 .bottom-nav a {
     padding: 10px;
 }
 
-#link-one {
-    flex-grow: 12;
-}
 
-#link-two, #link-three, #link-four, #link-five {
-    flex: 2;
-}
-
-#link-six, #link-seven, #link-eight {
-    flex: 2;
+@media screen and (width: 320px) {
+   
+   
+    .small-12 {
+        width: 100%;
+    }
+    
+    #link-zero {
+        justify-self: center;
+        align-self: center;
+    }
 }
