@@ -166,6 +166,16 @@ div.container{
     align-items: center;
 }
 
+section, first-div, second-div, third-div, ul.row {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 nav ul.bottom-nav {
     padding: 0;
     margin: 0;
@@ -183,14 +193,7 @@ nav ul.bottom-nav {
 
 
 @media screen and (width: 320px) {
-   
-   
     .small-12 {
         width: 100%;
-    }
-    
-    #link-zero {
-        justify-self: center;
-        align-self: center;
     }
 }
