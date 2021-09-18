@@ -26,8 +26,10 @@
     </header>
 
     <main>
-        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-            alt="google search logo">
+        <div id="logo-container">
+            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="google search logo" width="272px" height="92px">
+        </div>
 
         <div class="search">
             <input id="search-bar" type="search">
@@ -61,8 +63,8 @@
         <hr>
 
         <nav>
-            <section class="container row">
-                <div id="first-div">
+            <section class="flex-container">
+                <div class="container" id="first-div">
                     <ul class="row bottom-nav">
                         <li class="column small-12 large-4"><a id="link-zero"
                                 href="https://sustainability.google/commitments-europe/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="><span></span>Carbon
@@ -71,30 +73,32 @@
                     </ul>
                 </div>
 
-                <div class="" id="second-div">
+                <div class="container" id="second-div">
                     <ul class="row bottom-nav">
                         <li class="column small-12 medium-6 large-4"><a id="link-one"
                                 href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
                         </li>
-                        <li><a id="link-two"
+                        <li class="column small-12 medium-6 large-4"><a id="link-two"
                                 href="https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
                         </li>
-                        <li><a id="link-three"
+                        <li class="column small-12 medium-6 large-4"><a id="link-three"
                                 href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
                         </li>
-                        <li><a id="link-four" href="https://google.com/search/howsearchworks/?fg=1">How
+                        <li class="column small-12 medium-6 large-4"><a id="link-four"
+                                href="https://google.com/search/howsearchworks/?fg=1">How
                                 Search works</a>
                         </li>
                     </ul>
                 </div>
 
-                <div id="third-div">
+                <div class="container" id="third-div">
                     <ul class="row bottom-nav">
                         <li class="column small-12 medium-6 large-4"><a id="link-five"
                                 href="https://policies.google.com/privacy?hl=en-NG&fg=1">Privacy</a>
                         </li>
-                        <li><a id="link-six" href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a></li>
-                        <li><a id="link-seven" href="">Settings</a></li>
+                        <li class="column small-12 medium-6 large-4"><a id="link-six"
+                                href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a></li>
+                        <li class="column small-12 medium-6 large-4"><a id="link-seven" href="">Settings</a></li>
                     </ul>
                 </div>
             </section>

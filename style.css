@@ -35,7 +35,7 @@
 }
 
 body {
-    height: auto;
+    height: 100vh;
     width: auto;
     box-sizing: border-box;
     border: 1px solid red;
@@ -94,7 +94,7 @@ nav ul.top-nav {
 
 main{
     padding: 10px;
-    margin: 50px auto 200px;
+    margin: 50px auto 50px;
     display: block;
     justify-content: center;
     text-align: center;
@@ -108,9 +108,15 @@ a:hover {
     text-decoration: underline;
 }
 
+/* #logo-container {
+    width: 75%;
+} */
+
 #logo {
+    height: auto;
     width: 100%;
-    margin-bottom: 20px;
+    max-width: 300px;
+    margin: 0 auto 20px;
 }
 
 .search {
@@ -149,6 +155,11 @@ p a {
 /* footer styles*/
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-left: 5px;
     background-color: rgb(235, 235, 235);
 }
 
@@ -157,23 +168,24 @@ footer {
     text-align: left;
 }
 
-div.container{
+section.flex-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 
     justify-content: center;
     align-items: center;
 }
 
-section, first-div, second-div, third-div, ul.row {
-    width: 100%;
+.column {
+    padding: 5px;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 nav ul.bottom-nav {
@@ -193,7 +205,15 @@ nav ul.bottom-nav {
 
 
 @media screen and (width: 320px) {
-    .small-12 {
-        width: 100%;
-    }
+
+    
+}
+
+@media screen and (width: 666px) {
+
+    
+}
+
+@media screen and (width: 1200px) {
+    
 }
