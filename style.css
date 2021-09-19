@@ -38,8 +38,11 @@ body {
     height: 100vh;
     width: auto;
     box-sizing: border-box;
+
     border: 1px solid red;
     margin: 0 auto;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* navbar styles*/
@@ -50,6 +53,7 @@ body {
 
 header nav {
     margin: 5px;
+    font-size: 0.8em;
 }
 
 nav ul.top-nav {
@@ -94,7 +98,7 @@ nav ul.top-nav {
 
 main{
     padding: 10px;
-    margin: 50px auto 50px;
+    margin: 30px auto 50px;
     display: block;
     justify-content: center;
     text-align: center;
@@ -108,10 +112,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* #logo-container {
-    width: 75%;
-} */
-
 #logo {
     height: auto;
     width: 100%;
@@ -121,16 +121,18 @@ a:hover {
 
 .search {
     margin-bottom: 30px;
-    width: 100%;
-    background-color: aqua;
-}
-
-.search-bar {
-    display: inline-block;
-    width: 200px;
     
 }
 
+#search-bar {
+    display: inline-block;
+    width: 100%;
+    max-width: 530px;
+    height: 43px;
+    border-radius: 100px;
+}
+
+/* Using grid*/
 #search-item {
     width: 20%;
     margin: 0 auto 30px;
@@ -148,6 +150,10 @@ a:hover {
     justify-self: center;
 } 
 
+#offer {
+    font-size: 0.8em;
+}
+
 p a {
     margin-right: 5px;
 }
@@ -164,7 +170,8 @@ footer {
 }
 
 #location {
-    padding: 20px;
+    padding: 15px;
+    margin-left: 10px;
     text-align: left;
 }
 
@@ -175,17 +182,18 @@ section.flex-container{
 
     justify-content: center;
     align-items: center;
+
+    padding: 10px;
 }
 
-.column {
+.container{
     padding: 5px;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    
+   
 }
 
 nav ul.bottom-nav {
@@ -201,17 +209,22 @@ nav ul.bottom-nav {
 
 .bottom-nav a {
     padding: 10px;
+    width: auto;
+    font-size: 0.9em;
+}
+
+#link-four {
+    width: auto;
 }
 
 
-@media screen and (width: 320px) {
-
+@media screen and (min-width: 320px) {
     
-}
 
-@media screen and (width: 666px) {
-
-    
+@media screen and (min-width: 576px) {
+    #link-zero {
+        display: none;
+    }
 }
 
 @media screen and (width: 1200px) {
