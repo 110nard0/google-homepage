@@ -1,33 +1,3 @@
-/* Import CSS rules for rendering Material Icons */
-.material-icons-outlined {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-
-    padding: 0;
-    margin: 0;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-}
-
 /* Force uniform property values for all browser types */
 * {
     padding: 0;
@@ -38,11 +8,12 @@ body {
     height: 100vh;
     width: auto;
     box-sizing: border-box;
-
+    position: relative;
     border: 1px solid red;
     margin: 0 auto;
 
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 /* navbar styles*/
@@ -66,24 +37,31 @@ nav ul.top-nav {
 
 .top-nav li {
     display: inline-block;
+    
 }
 
 .top-nav li a { 
     margin: 0 5px 0 5px;
     font-size: 1em;
-    margin-right: 5px;
+    color: rgba(0,0,0,0.87);
 }
 
 #icon {
-    padding: 5px 5px;
-    margin-right: 5px;
+    position: absolute;
+    top: 4px;
+    right: 105px;
+    
+    margin: 10px;
+    color: rgba(0,0,0,1);
+    
 }
 
 #sign-in {
     border: none;
     border-radius: 5px;
-    padding: 10px 25px;
+    padding: 10px 20px;
     margin: 5px;
+    margin-left: 55px;
     
     background-color: royalblue;
     color: white;
@@ -97,7 +75,6 @@ nav ul.top-nav {
 /* searchbar styles*/
 
 main{
-    padding: 10px;
     margin: 30px auto 50px;
     display: block;
     justify-content: center;
@@ -105,7 +82,9 @@ main{
 }
 
 a {
+    color: black;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {
@@ -114,9 +93,10 @@ a:hover {
 
 #logo {
     height: auto;
+    max-height: 100%;
     width: 100%;
     max-width: 300px;
-    margin: 0 auto 20px;
+    margin: 5px auto 20px;
 }
 
 .search {
@@ -125,11 +105,16 @@ a:hover {
 }
 
 #search-bar {
-    display: inline-block;
+    display: block;
+    height: 43px;
     width: 100%;
     max-width: 530px;
-    height: 43px;
+    margin: auto;
+    border: 1px solid #dfe1e5;
     border-radius: 100px;
+    box-shadow: rgb();
+
+    /*color: #222;*/
 }
 
 /* Using grid*/
@@ -139,6 +124,7 @@ a:hover {
 
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.8em;
     
@@ -148,14 +134,20 @@ a:hover {
     padding: 5px;
     width: 120px;
     justify-self: center;
+    align-self: center;
 } 
+
+.button {
+
+}
 
 #offer {
     font-size: 0.8em;
 }
 
-p a {
+#lang {
     margin-right: 5px;
+    color: #1a0dab
 }
 
 /* footer styles*/
@@ -207,15 +199,13 @@ nav ul.bottom-nav {
     display: inline-block;
 }
 
-.bottom-nav a {
+.bottom-nav a, .bottom-nav span {
     padding: 10px;
     width: auto;
     font-size: 0.9em;
 }
 
-#link-four {
-    width: auto;
-}
+
 
 
 @media screen and (min-width: 320px) {

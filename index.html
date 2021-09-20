@@ -16,8 +16,9 @@
             <ul class="top-nav">
                 <li><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
                 <li><a href="https://www.google.com.tr/imghp?hl=en&ogbl">Images</a></li>
-                <li><span id="icon" class="material-icons-outlined">
-                        apps</span></li>
+                <!--<li><span  class="material-icons-outlined">
+                        apps</span></li>-->
+                <li><img id="icon" src="https://img.icons8.com/material-outlined/24/000000/circled-menu.png" /></li>
                 <li><button id="sign-in" type="Submit">Sign In</button></li>
             </ul>
         </nav>
@@ -26,17 +27,20 @@
     <main>
         <div id="logo-container">
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                alt="google search logo" width="3" height="1">
+                alt="google search logo" width="272" height="92">
         </div>
 
-        <div class="search">
-            <input id="search-bar" type="search">
-        </div>
+        <form action="">
+            <div class="search">
+                <input id="search-bar" type="search">
+            </div>
 
-        <div id="search-item">
-            <button id="search-item-1" class="button" type="submit">Google Search</button>
-            <button id="search-item-2" class="button" type="submit">I'm Feeling Lucky</button>
-        </div>
+
+            <div id="search-item">
+                <button id="search-item-1" class="button" type="submit">Google Search</button>
+                <button id="search-item-2" class="button" type="submit">I'm Feeling Lucky</button>
+            </div>
+        </form>
 
         <div class="lang-links">
             <p id="offer">Google offered in: <a id="lang"
@@ -64,7 +68,7 @@
             <section class="flex-container">
                 <div class="container" id="first-div">
                     <ul class="row bottom-nav">
-                        <li class="column small-12 large-4"><a id="link-zero"
+                        <li class="column1 small-12 large-4"><a id="link-zero"
                                 href="https://sustainability.google/commitments-europe/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="><span></span>Carbon
                                 neutral since 2007</a>
                         </li>
@@ -73,16 +77,16 @@
 
                 <div class="container" id="second-div">
                     <ul class="row bottom-nav">
-                        <li class="column small-12 medium-6 large-4"><a id="link-one"
+                        <li class="column2 small-12 medium-6 large-4"><a id="link-one"
                                 href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
                         </li>
-                        <li class="column small-12 medium-6 large-4"><a id="link-two"
+                        <li class="column2 small-12 medium-6 large-4"><a id="link-two"
                                 href="https://www.google.com/intl/en_ng/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
                         </li>
-                        <li class="column small-12 medium-6 large-4"><a id="link-three"
+                        <li class="column2 small-12 medium-6 large-4"><a id="link-three"
                                 href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
                         </li>
-                        <li class="column small-12 medium-6 large-4"><a id="link-four"
+                        <li class="column2 small-12 medium-6 large-4"><a id="link-four"
                                 href="https://google.com/search/howsearchworks/?fg=1">How
                                 Search works</a>
                         </li>
@@ -91,12 +95,16 @@
 
                 <div class="container" id="third-div">
                     <ul class="row bottom-nav">
-                        <li class="column small-12 medium-6 large-4"><a id="link-five"
+                        <li class="column3 small-12 medium-6 large-4"><a id="link-five"
                                 href="https://policies.google.com/privacy?hl=en-NG&fg=1">Privacy</a>
                         </li>
-                        <li class="column small-12 medium-6 large-4"><a id="link-six"
+                        <li class="column3 small-12 medium-6 large-4"><a id="link-six"
                                 href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a></li>
-                        <li class="column small-12 medium-6 large-4"><a id="link-seven" href="">Settings</a></li>
+                        <li class="column3 small-12 medium-6 large-4" id="dropdown"><span>Settings</span>
+                            <div>
+
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
