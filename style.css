@@ -210,26 +210,6 @@ a:hover {
     border-color: transparent;
 }
 
-/*.search {
-    margin-bottom: 30px;
-    
-}
-
-#search-bar {
-    display: block;
-    height: 43px;
-    width: 100%;
-    max-width: 530px;
-    margin: auto;
-    border: 1px solid #dfe1e5;
-    border-radius: 100px;
-}
-
-#search-bar:hover {
-    box-shadow: rgba(0,0,0,1);
-
-}
-
 /* Using grid*/
 #search-item {
     height: 36px;
@@ -301,6 +281,7 @@ footer{
     text-align: left;
 }
 
+/*  Using flexbox */
 section.flex-container{
     display: flex;
     flex-direction: row;
@@ -336,6 +317,8 @@ nav ul.bottom-nav {
     color: #70757a;
 }
 
+
+/* Clickable dropdown menu styles */
 .dropdown {
   position: relative;
   display: inline-block;
