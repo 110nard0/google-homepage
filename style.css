@@ -281,7 +281,6 @@ section.flex-container{
 
 .container{
     padding: 15px;
-    flex-wrap: nowrap;
 }
 
 .row {
