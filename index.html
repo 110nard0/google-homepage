@@ -16,8 +16,7 @@
             <ul class="top-nav">
                 <li><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
                 <li><a href="https://www.google.com.tr/imghp?hl=en&ogbl">Images</a></li>
-                <!--<li><span  class="material-icons-outlined">
-                        apps</span></li>-->
+                <!-- <a href="https://icons8.com/icon/84080/circled-menu">Circled Menu icon by Icons8</a> -->
                 <li><img id="icon" src="https://img.icons8.com/material-outlined/24/000000/circled-menu.png" /></li>
                 <li><button id="sign-in" type="Submit">Sign in</button></li>
             </ul>
@@ -25,7 +24,7 @@
     </header>
 
     <main>
-        <div id="logo-container">
+        <div class="logo-container">
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
                 alt="google search logo" width="272" height="92">
         </div>
@@ -33,19 +32,12 @@
         <div class="search-container">
             <div class="searchbar">
                 <label for="search-input" class="search-icon-wrapper">
-                    <input type="text" class="search-input" id="search-input" placeholder="Search Google or type a URL">
+                    <div class="search-icon"></div>
                 </label>
-                <div class="search-icon"></div>
+                <input type="text" class="search-input" id="search-input" placeholder="Search Google or type a URL">
                 <button class="search-microphone"></button>
             </div>
         </div>
-
-        <!--
-        <form action="">
-            <div class="search">
-                <input id="search-bar" type="search">
-            </div>
--->
 
         <div id="search-item">
             <button id="search-item-1" class="button" type="submit">Google Search</button>
@@ -109,9 +101,19 @@
                         </li>
                         <li class="column3 small-12 medium-6 large-4"><a id="link-six"
                                 href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a></li>
-                        <li class="column3 small-12 medium-6 large-4" id="dropdown"><span>Settings</span>
-                            <div>
-
+                        <li class="column3 small-12 medium-6 large-4" class="dropdown">
+                            <span onclick="myFunction()" class="dropbtn">Settings</span>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="https://www.google.com/preferences?hl=en-CH&fg=1">Search settings</a>
+                                <a href="https://www.google.com/advanced_search?hl=en-CH&fg=1">Advanced search</a>
+                                <a
+                                    href="https://www.google.com/history/privacyadvisor/search/unauth?utm_source=googlemenu&fg=1">Your
+                                    data in Search</a>
+                                <a href="https://www.google.com/history/optout?hl=en-CH&fg=1">Search history</a>
+                                <a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-CH&fg=1">Search
+                                    help</a>
+                                <a href="https://www.google.com/preferences?hl=en-CH&fg=1">Search feedback</a>
+                                <a href="#">Appearance: Light Theme</a>
                             </div>
                         </li>
                     </ul>
@@ -119,6 +121,28 @@
             </section>
         </nav>
     </footer>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

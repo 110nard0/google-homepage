@@ -92,7 +92,7 @@ nav ul.top-nav {
 /* searchbar styles*/
 
 main{
-    margin: 5px auto 50px;
+    margin: 25px auto 50px;
     display: block;
     justify-content: center;
     text-align: center;
@@ -113,7 +113,7 @@ a:hover {
     max-height: 100%;
     width: auto;
     max-width: 100%;
-    margin: 5px auto 20px;
+    margin: 10px auto 20px;
 }
 
 /* -----search-container styles----- */
@@ -121,7 +121,7 @@ a:hover {
 .search-container {
     --searchbox-height: 44px;
     margin: 0 auto 0 auto;
-    max-width: 584px;
+    max-width: 543px;
 }
 
 /* -----searchbar styles----- */
@@ -149,8 +149,8 @@ a:hover {
     box-sizing: border-box;
     margin: 0;
     height: 100%;
-    width: calc(100% - 100px);
-    min-width: 329px;
+    width: calc(100%- 100px);
+    min-width: 320px;
     border-color: transparent;
     color: rgb(117, 117, 117);
     font-size: 16px;
@@ -306,12 +306,8 @@ section.flex-container{
     color: #70757a;
 }
 
-#first-div, #second-div, #third-div {
-    padding: 15px;
-}
-
 .container{
-    padding: 5px;
+    padding: 15px;
 }
 
 .row {
@@ -339,20 +335,74 @@ nav ul.bottom-nav {
     font-size: 14px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    list-style: none;
+    display: none;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+    position: absolute;
+    bottom: 46px;
+    right: 100px;
+    
+    background: #fff;
+    border: 1px solid #70757a;
+}
 
+.dropdown-content a {
+    padding: 15px;
+    display: block;
+    white-space: nowrap;
+    color: #70757a;
+}
+  
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+  
+.show {display: block;}
 
 @media screen and (min-width: 320px) {
     
 
 @media screen and (min-width: 576px) {
+    .flex-container {
+        justify-content: space-around;
+    }
+    
     #link-zero {
-        display: none;
+        order: 2;
     }
 }
 
 @media screen and (width: 1200px) {
-    .flex-container {
-        justify-content: space-evenly;
+    #link-one {
+        float: left;
+    }
+
+    #third-div {
+        float: right;
+    }
+
+    #link-zero {
+        display: inline-block;
+        order: 1;
     }
 }
