@@ -301,8 +301,6 @@ section.flex-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     color: #70757a;
 }
 
@@ -328,11 +326,10 @@ nav ul.bottom-nav {
 }
 
 .bottom-nav a, .bottom-nav span {
-    padding: 10px;
+    padding: 15px;
     width: auto;
     font-size: 0.9em;
     color: #70757a;
-    font-size: 14px;
 }
 
 .dropdown {
@@ -360,7 +357,7 @@ nav ul.bottom-nav {
     z-index: 1;
     position: absolute;
     bottom: 46px;
-    right: 100px;
+    right: 150px;
     
     background: #fff;
     border: 1px solid #70757a;
@@ -380,29 +377,30 @@ nav ul.bottom-nav {
 .show {display: block;}
 
 @media screen and (min-width: 320px) {
-    
+    .flex-container {
+        justify-content: center;
+        align-items: center;
+    }
 
-@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 762px) {
     .flex-container {
         justify-content: space-around;
     }
-    
-    #link-zero {
-        order: 2;
+
+    .dropdown-content {
+        right: 100px;
     }
 }
 
-@media screen and (width: 1200px) {
-    #link-one {
-        float: left;
+@media screen and (min-width: 1200px) {
+    .flex-container {
+        justify-content: space-between;
+        padding: 0 5px;
     }
 
-    #third-div {
-        float: right;
-    }
-
-    #link-zero {
-        display: inline-block;
-        order: 1;
+    .dropdown-content {
+        right: 75px;
     }
 }
