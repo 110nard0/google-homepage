@@ -282,6 +282,7 @@ footer{
 }
 
 /*  Using flexbox */
+
 section.flex-container{
     display: flex;
     flex-direction: row;
@@ -312,6 +313,7 @@ nav ul.bottom-nav {
 
 .bottom-nav a, .bottom-nav span {
     padding: 15px;
+    white-space: nowrap;
     width: auto;
     font-size: 0.9em;
     color: #70757a;
@@ -368,7 +370,6 @@ nav ul.bottom-nav {
         justify-content: center;
         align-items: center;
     }
-
 }
 
 @media screen and (min-width: 762px) {
