@@ -9,11 +9,9 @@ body {
     width: auto;
     box-sizing: border-box;
     position: relative;
-    border: 1px solid red;
     margin: 0 auto;
-
+    border: 1px solid red;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 /* navbar styles*/
@@ -47,7 +45,6 @@ nav ul.top-nav {
     position: absolute;
     top: 6px;
     right: 115px;
-    
     margin: 10px;
     color: #5f6368;
 }
@@ -81,13 +78,9 @@ nav ul.top-nav {
     box-shadow: 0 1px 3px 1px rgba(66,133,244,0.15);
 }
 
-#sign-in:active {
-    background-color: #63a0ef;
-}
+#sign-in:active {background-color: #63a0ef;}
 
-#sign-in:focus {
-    background-color: #5094ed
-}
+#sign-in:focus {background-color: #5094ed}
 
 /* searchbar styles*/
 
@@ -104,9 +97,7 @@ a {
     cursor: pointer;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+a:hover {text-decoration: underline;}
 
 #logo {
     height: auto;
@@ -120,23 +111,23 @@ a:hover {
 
 .search-container {
     --searchbox-height: 44px;
-    margin: 0 auto 0 auto;
     max-width: 543px;
+    margin: 0 auto 0 auto;
 }
 
 /* -----searchbar styles----- */
 
 .searchbar {
-    background: white;
-    cursor: text;
+    height: var(--searchbox-height);
     margin: 0 auto;
-    
     border: 1px solid #dfe1e5;
     border-radius: 22px;
     box-sizing: border-box;
-    font-size: 16px;
-    height: var(--searchbox-height);
     position: relative;
+
+    font-size: 16px;
+    background: white;
+    cursor: text;
 }
 
 .searchbar:focus, .searchbar:hover, .searchbar:active {
@@ -146,28 +137,28 @@ a:hover {
   /* -----search-input styles----- */
 
 .search-input {
-    box-sizing: border-box;
-    margin: 0;
     height: 100%;
     width: calc(100%- 100px);
     min-width: 320px;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    overflow: hidden;
+    
+    box-sizing: border-box;
     border-color: transparent;
     color: rgb(117, 117, 117);
     font-size: 16px;
     line-height: 44px;
-    margin: auto 0;
-    overflow: hidden;
-    text-align: initial;
     text-overflow: ellipsis;
-    user-select: none;
+    text-align: initial;
     vertical-align: middle;
+    user-select: none;
     white-space: nowrap;
-    position: absolute;
-    top: 0;
-    left: 50px;}
+}
 
-.search-input:focus {
-    outline: transparent;}
+.search-input:focus {outline: transparent;}
 
 .search-input:focus::placeholder {
     color: transparent;}
@@ -185,13 +176,13 @@ a:hover {
     -webkit-mask-position: center;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 20px;
-    background-color: rgb(117, 117, 117);
-    bottom: 0;
-    left: 16px;
+    width: 24px;
     margin: auto;
     position: absolute;
+    bottom: 0;
+    left: 16px;
     top: 0;
-    width: 24px;
+    background-color: rgb(117, 117, 117);
 }
 
 /* -----search-microphone styles----- */
@@ -199,15 +190,15 @@ a:hover {
 .search-microphone {
     background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPjxwYXRoIGZpbGw9IiM0Mjg1RjQiIGQ9Ik0xMiAxNWMxLjY2IDAgMi45OS0xLjM0IDIuOTktM0wxNSA1YzAtMS42Ni0xLjM0LTMtMy0zUzkgMy4zNCA5IDV2N2MwIDEuNjYgMS4zNCAzIDMgM3oiLz48cGF0aCBmaWxsPSIjMzRBODUzIiBkPSJNMTEgMTguOTJoMlYyMmgtMnoiLz48cGF0aCBmaWxsPSIjRjRCNDAwIiBkPSJNNyAxMkg1YzAgMS45My43OCAzLjY4IDIuMDUgNC45NWwxLjQxLTEuNDFDNy41NiAxNC42MyA3IDEzLjM4IDcgMTJ6Ii8+PHBhdGggZmlsbD0iI0VBNDMzNSIgZD0iTTEyIDE3Yy0xLjM4IDAtMi42My0uNTYtMy41NC0xLjQ3bC0xLjQxIDEuNDFBNi45OSA2Ljk5IDAgMCAwIDEyLjAxIDE5YzMuODcgMCA2Ljk4LTMuMTQgNi45OC03aC0yYzAgMi43Ni0yLjIzIDUtNC45OSA1eiIvPjwvc3ZnPg==) no-repeat center;
     background-size: 21px 21px;
-    bottom: 0;
-    cursor: pointer;
-    margin-inline-end: 16px;
-    padding: 22px 12px 0;
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 21px;
+    padding: 22px 12px 0;
+    margin-inline-end: 16px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
     border-color: transparent;
+    cursor: pointer;
 }
 
 /* Using grid*/
@@ -221,8 +212,6 @@ a:hover {
     align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.8em;
-    
-
 }
 
  #search-item-1, #search-item-2{
@@ -292,6 +281,7 @@ section.flex-container{
 
 .container{
     padding: 15px;
+    flex-wrap: nowrap;
 }
 
 .row {
@@ -312,9 +302,9 @@ nav ul.bottom-nav {
 }
 
 .bottom-nav a, .bottom-nav span {
+    width: auto;
     padding: 15px;
     white-space: nowrap;
-    width: auto;
     font-size: 0.9em;
     color: #70757a;
 }
@@ -322,8 +312,8 @@ nav ul.bottom-nav {
 
 /* Clickable dropdown menu styles */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .dropbtn {
@@ -339,14 +329,14 @@ nav ul.bottom-nav {
 }
   
 .dropdown-content {
-    list-style: none;
-    display: none;
     min-width: 160px;
-    overflow: auto;
-    z-index: 1;
+    display: none;
     position: absolute;
     bottom: 46px;
-    right: 150px;
+    right: 100px;
+    list-style: none;
+    overflow: auto;
+    z-index: 1;
     
     background: #fff;
     border: 1px solid #70757a;
@@ -355,8 +345,8 @@ nav ul.bottom-nav {
 .dropdown-content a {
     padding: 15px;
     display: block;
-    white-space: nowrap;
     color: #70757a;
+    white-space: nowrap;
 }
   
 .dropdown-content a:hover {
@@ -378,7 +368,7 @@ nav ul.bottom-nav {
     }
 
     .dropdown-content {
-        right: 100px;
+        right: 75px;
     }
 }
 
@@ -389,6 +379,6 @@ nav ul.bottom-nav {
     }
 
     .dropdown-content {
-        right: 75px;
+        right: 50px;
     }
 }
